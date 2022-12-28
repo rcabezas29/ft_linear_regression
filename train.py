@@ -9,7 +9,7 @@ def	show_graphic(data):
 	theta0, theta1 = catch_tethas()
 
 	plt.scatter(km, price)
-	x = np.linspace(22899, 240000, 100)
+	x = np.linspace(data['km'].min(), data['km'].max())
 	y = theta1 * x + theta0
 	plt.plot(x, y, '-r', label='y = mx + k')
 	plt.xlabel("KM")
