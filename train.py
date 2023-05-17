@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from predict import estimate_price, catch_tethas
 import numpy as np
 from tqdm import tqdm
+import os
 
 def	show_graphic(data):
 	km = list(data.km)
@@ -64,5 +65,8 @@ def	linear_regression(data):
 
 
 if __name__ == '__main__':
-	data = pd.read_csv("./data.csv")
-	linear_regression(data)
+	if not os.path.isfile("./data.csv"):
+		print("Data file doesn't exist")
+	else:
+		data = pd.read_csv("./data.csv")
+		linear_regression(data)
