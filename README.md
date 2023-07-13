@@ -15,7 +15,7 @@ in order to ajust *theta0* and *theta1* (the constant and the slope of a linear 
 ![](https://latex.codecogs.com/svg.image?tmp&space;\theta_{0}&space;=&space;\alpha&space;*&space;\frac{1}{m}&space;\sum_{i&space;=&space;0}^{m&space;-&space;1}(estimatePrice(mileage[i])&space;-&space;price[i]))
 ![](https://latex.codecogs.com/svg.image?tmp&space;\theta_{1}&space;=&space;\alpha&space;*&space;\frac{1}{m}&space;\sum_{i&space;=&space;0}^{m&space;-&space;1}(estimatePrice(mileage[i])&space;-&space;price[i])&space;*&space;mileage[i])
 
-![](./Train.png)  
+![](./Train.mov)
 
 After the whole training, it stores *theta0* and *theta1* into `.theta`.
 
